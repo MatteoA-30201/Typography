@@ -2,6 +2,12 @@ body {
     background-color: #0b2e3b;
 }
 
+@keyframes floating {
+  0% {transform: translate(0,0);}
+  50% {transform: translate(0,10px);}
+  100% {transform: translate(0,-0);}
+}
+
 #title-header-container {
     position: relative;
     display: flex;
@@ -9,34 +15,34 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    animation: floating 7s ease-in-out infinite;
 }
 
 .title-header {
     font-weight: bold;
     font-size: 30px;
-    padding: 20px;
+    padding: 30px;
     outline: inset #36a68d 6px;
     outline-offset: -3mm;
     border-radius: 20px;
     color: #4bbfbb;
     font-family: 'Montserrat', sans-serif;
-    font-kerning: 20px;
 }
 
 #title-header-three-container {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    left: 580px;
-    top: 10px;
+    top: 30px;
+    animation: floating 6s ease-in-out infinite;
 }
 
 .title-header-three {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: 600;
     color: #125d69;
     outline: #4bbfbb outset 3px;
@@ -53,15 +59,18 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-
+    top: 100px;
 }
 
 .intro-paragraph {
     font-family: 'Source Sans Pro', sans-serif;
-    text-indent: 15px;
-    line-height: 0.5;
-    padding: 3px;
+    text-indent: 30px;
+    line-height: 1.2;
+    padding: 30px;
     font-weight: 300;
-    font-size: 15px;
+    font-size:17px;
     color: #9cd8d0;
+    outline: ridge #36a68d 6px;
+    outline-offset: -3mm;
+    border-radius: 20px;
 }
